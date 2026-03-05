@@ -1,0 +1,55 @@
+---
+title: "Sign In and Permissions"
+description: "Authenticate and grant required macOS permissions for Voxas."
+---
+
+## When to use this
+
+Use this page immediately after installing Voxas, or anytime permissions need to be re-granted.
+
+<Note>
+  Image placeholder: Voxas sign-in screen and post-login permissions checklist.
+</Note>
+
+## User flow
+
+1. Sign in with your Voxas account.
+2. Review required permissions.
+3. Grant microphone and system audio access.
+
+<Note>Image placeholder: macOS microphone permission prompt.</Note>
+
+## How to do it
+
+### Step 1: Sign in
+
+Open Voxas and complete the sign-in flow in the app window.
+
+### Step 2: Open permissions checks
+
+After sign-in, review the permission status shown in the setup screen.
+
+### Step 3: Grant required permissions
+
+Approve microphone access and any other required prompts. If prompted to open System Settings, follow the deep link and enable access.
+
+## What success looks like
+
+- All required permission checks show as complete.
+- You can proceed to create or enter a session.
+
+## What could go wrong
+
+### Issue: Permission prompt never appears
+
+- **Why it happens:** macOS may already store a denied state.
+- **How to fix:** Open macOS Privacy settings for microphone and enable Voxas manually.
+
+### Issue: Permission appears enabled but audio is still silent
+
+- **Why it happens:** macOS TCC permission state may be stale.
+- **How to fix:** Follow the reset steps in [Microphone permissions troubleshooting](/troubleshooting/microphone-permissions).
+
+## Next step
+
+Continue to [Your first session](/getting-started/first-session).

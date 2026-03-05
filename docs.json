@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Voxas Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,58 +11,50 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Get Started",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
               "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "getting-started/install-voxas-desktop",
+              "getting-started/sign-in-and-permissions",
+              "getting-started/first-session"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Use Voxas",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Core workflows",
             "pages": [
-              "api-reference/introduction"
+              "use-voxas/sessions-and-history",
+              "use-voxas/prompts-and-skills"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Troubleshooting",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Fix common issues",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "troubleshooting/microphone-permissions"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Quick lookup",
+            "pages": [
+              "reference/keyboard-shortcuts",
+              "templates/user-feature-template"
             ]
           }
         ]
@@ -71,14 +63,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Voxas Website",
+          "href": "https://voxas.ai",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -91,13 +78,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://voxas.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Download Voxas",
+      "href": "https://voxas.ai"
     }
   },
   "contextual": {
@@ -114,9 +101,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/voxas_ai",
+      "discord": "https://discord.com/invite/voxas"
     }
   }
 }

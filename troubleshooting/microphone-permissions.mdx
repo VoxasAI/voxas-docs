@@ -1,0 +1,62 @@
+---
+title: "Fix Microphone Permission Issues (macOS)"
+description: "Resolve cases where Voxas appears connected but audio input is silent."
+---
+
+## When to use this
+
+Use this guide if Voxas runs but voice input/transcription remains silent.
+
+<Note>
+Image placeholder: macOS Privacy and Security -> Microphone settings with Voxas entry.
+</Note>
+
+## User flow
+
+1. Check microphone permission status.
+2. Reset stuck permissions.
+3. Reinstall and grant access again.
+
+<Warning>
+  If you use permission reset commands, Voxas will ask for permissions again on
+  next launch.
+</Warning>
+
+## How to do it
+
+### Step 1: Check macOS microphone access
+
+Open macOS settings and confirm Voxas is enabled in the microphone privacy list.
+
+### Step 2: Reset TCC permissions
+
+Run:
+
+```bash
+tccutil reset All com.voxas.app
+```
+
+### Step 3: Reinstall and re-grant
+
+Delete Voxas from `Applications`, reinstall the latest build, open the app, and approve permission prompts.
+
+## What success looks like
+
+- Audio input is detected.
+- Session transcripts resume normally.
+
+## What could go wrong
+
+### Issue: Still no audio after reset
+
+- **Why it happens:** System input device is wrong or muted.
+- **How to fix:** Verify selected input device and volume in macOS Sound settings.
+
+### Issue: Permission appears enabled but stream remains silent
+
+- **Why it happens:** Stale app install state.
+- **How to fix:** Reinstall from a fresh package and repeat permission grant.
+
+## Next step
+
+Return to [Sign in and permissions](/getting-started/sign-in-and-permissions) to verify full setup.
